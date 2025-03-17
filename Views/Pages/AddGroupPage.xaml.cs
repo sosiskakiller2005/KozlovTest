@@ -18,26 +18,25 @@ using System.Windows.Shapes;
 namespace KozlovTest.Views.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AddStudentPage.xaml
+    /// Логика взаимодействия для AddGroupPage.xaml
     /// </summary>
-    public partial class AddStudentPage : Page
+    public partial class AddGroupPage : Page
     {
         private KozlovTestEntities _context = new KozlovTestEntities();
-        public AddStudentPage()
+        public AddGroupPage()
         {
             InitializeComponent();
         }
 
         private void EntertBtn_Click(object sender, RoutedEventArgs e)
         {
-            Student newStudent = new Student()
+            Group newGroup = new Group()
             {
-                Name = NameTb.Text,
-                Group = GroupCmb.SelectedItem as Group
+                Name = NameTb.Text
             };
-            _context.Student.Add(newStudent);
+            _context.Group.Add(newGroup);
             _context.SaveChanges();
-            MessageBox.Show("Студент добавлен.");
+            MessageBox.Show("Группа добавлена.");
             FrameHelper.selectedFrame.Navigate(new MenuPage());
         }
     }

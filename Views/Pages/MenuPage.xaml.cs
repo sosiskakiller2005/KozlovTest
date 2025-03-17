@@ -28,7 +28,7 @@ namespace KozlovTest.Views.Pages
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.selectedFrame.Navigate(new AddStudentPage());
         }
 
         private void AddGroupBtn_Click(object sender, RoutedEventArgs e)
