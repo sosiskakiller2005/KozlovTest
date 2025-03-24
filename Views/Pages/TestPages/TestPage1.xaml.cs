@@ -20,23 +20,66 @@ namespace KozlovTest.Views.Pages.TestPages
     /// </summary>
     public partial class TestPage1 : Page
     {
+        private int sum = 0;
         public TestPage1()
         {
             InitializeComponent();
         }
+
+        private void p1_Click(object sender, RoutedEventArgs e)
+        {
+            if (Tb1.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p1.Visibility = Visibility.Collapsed;
+        }
+
         private void p2_Click(object sender, RoutedEventArgs e)
         {
-
+            if (RB1.IsChecked == true)
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p2.Visibility = Visibility.Collapsed;
         }
 
         private void p3_Click(object sender, RoutedEventArgs e)
         {
-
+            if (ChB1.IsChecked == true)
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p3.Visibility = Visibility.Collapsed;
         }
 
-        private void p1_Click(object sender, RoutedEventArgs e)
+        private void p4_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Tb4Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p4.Visibility = Visibility.Collapsed;
         }
 
         private void p5_Click(object sender, RoutedEventArgs e)

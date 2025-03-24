@@ -13,9 +13,9 @@
         <TextBlock Text="Тесты по дисциплине" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
         <TextBlock Text="Экономика отрасли" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
         <Border Height="10"/>
-        <Button Name="TeacherBtn" Content="Преподаватель" Click="TeacherBtn_Click"/>
+        <Button Name="TeacherBtn" Content="Преподаватель" Click="TeacherBtn_Click" Width="250"/>
         <Border Height="10"/>
-        <Button Name="Student" Content="Студент" Click="Student_Click"/>
+        <Button Name="Student" Content="Студент" Click="Student_Click" Width="250"/>
 
     </StackPanel>
 </Page>
