@@ -1,4 +1,5 @@
 ﻿using KozlovTest.AppData;
+using KozlovTest.Views.Pages.StudentPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace KozlovTest.Views.Pages
 
         private void Student_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.selectedFrame.Navigate(new StudentPage());
         }
     }
 }

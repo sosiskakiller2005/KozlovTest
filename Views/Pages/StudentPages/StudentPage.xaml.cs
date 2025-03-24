@@ -24,9 +24,11 @@ namespace KozlovTest.Views.Pages.StudentPages
     public partial class StudentPage : Page
     {
         private KozlovTestEntities _context = new KozlovTestEntities();
+        private List<Student> students = new List<Student>();
         public StudentPage()
         {
             InitializeComponent();
+            students = _context.Student.ToList();
             GroupCmb.ItemsSource = _context.Group.ToList();
             GroupCmb.DisplayMemberPath = "Name";
 
@@ -46,7 +48,7 @@ namespace KozlovTest.Views.Pages.StudentPages
 
         private void GroupCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            StudentCmb.ItemsSource = _context.Student.Where(s => s.Group == GroupCmb.SelectedItem as Group);
+            StudentCmb.ItemsSource = students.Where(s => s.Group == GroupCmb.SelectedItem as Group);
         }
     }
 }
