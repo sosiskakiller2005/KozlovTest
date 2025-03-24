@@ -1,4 +1,7 @@
-﻿using System;
+﻿using KozlovTest.AppData;
+using KozlovTest.Model;
+using KozlovTest.Views.Pages.TestPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,30 @@ namespace KozlovTest.Views.Pages.StudentPages
     /// </summary>
     public partial class StudentPage : Page
     {
+        private KozlovTestEntities _context = new KozlovTestEntities();
         public StudentPage()
         {
             InitializeComponent();
+            GroupCmb.ItemsSource = _context.Group.ToList();
+            GroupCmb.DisplayMemberPath = "Name";
+
+            StudentCmb.DisplayMemberPath = "Name";
+
+            TestCmb.ItemsSource = _context.Test.ToList();
+            TestCmb.DisplayMemberPath = "Name";
+        }
+
+        private void StartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (TestCmb.SelectedIndex == 1)
+            {
+                FrameHelper.selectedFrame.Navigate(new TestPage1());
+            }
+        }
+
+        private void GroupCmb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            StudentCmb.ItemsSource = _context.Student.Where(s => s.Group == GroupCmb.SelectedItem as Group);
         }
     }
 }

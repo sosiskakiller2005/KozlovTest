@@ -26,6 +26,7 @@ namespace KozlovTest.Views.Pages
         public AddGroupPage()
         {
             InitializeComponent();
+            
         }
 
         private void EntertBtn_Click(object sender, RoutedEventArgs e)

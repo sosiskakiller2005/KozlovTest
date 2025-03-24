@@ -33,7 +33,7 @@ namespace KozlovTest.Views.Pages
 
         private void AddGroupBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.selectedFrame.Navigate(new AddGroupPage());
         }
 
         private void StudentsListBtn_Click(object sender, RoutedEventArgs e)
@@ -43,7 +43,7 @@ namespace KozlovTest.Views.Pages
 
         private void DeleteStudentBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.selectedFrame.Navigate(new DeleteStudentPage());
         }
 
         private void MenuBtn_Click(object sender, RoutedEventArgs e)

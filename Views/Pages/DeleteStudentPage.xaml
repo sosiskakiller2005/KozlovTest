@@ -12,7 +12,7 @@
         <ListView Name="StudentsLv" MouseDoubleClick="StudentsLv_MouseDoubleClick">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="ФИо" DisplayMemberBinding="{Binding Fullname}"/>
+                    <GridViewColumn Header="ФИо" DisplayMemberBinding="{Binding Name}"/>
                 </GridView>
             </ListView.View>
         </ListView>

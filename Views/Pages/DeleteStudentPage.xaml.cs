@@ -26,6 +26,7 @@ namespace KozlovTest.Views.Pages
         public DeleteStudentPage()
         {
             InitializeComponent();
+            StudentsLv.ItemsSource = _context.Student.ToList();
         }
 
         private void StudentsLv_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -35,6 +36,7 @@ namespace KozlovTest.Views.Pages
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 _context.Student.Remove(selectetudent);
+                _context.SaveChanges();
                 MessageBox.Show("Студент удален.");
                 FrameHelper.selectedFrame.Navigate(new MenuPage());
             }

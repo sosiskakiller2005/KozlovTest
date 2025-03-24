@@ -10,8 +10,17 @@
 
     <StackPanel>
         <TextBlock Text="Выберите группу"/>
-        <ComboBox Name="GroupCmb"/>
+        <Border Height="20"/>
+        <ComboBox Name="GroupCmb" SelectionChanged="GroupCmb_SelectionChanged"/>
+        <Border Height="20"/>
         <TextBlock Text="Выберите студента"/>
+        <Border Height="20"/>
         <ComboBox Name="StudentCmb"/>
+        <Border Height="20"/>
+        <TextBlock Text="Выберите тест"/>
+        <Border Height="20"/>
+        <ComboBox Name="TestCmb"/>
+        <Border Height="20"/>
+        <Button Name="StartBtn" Content="Начать" Click="StartBtn_Click"/>
     </StackPanel>
 </Page>

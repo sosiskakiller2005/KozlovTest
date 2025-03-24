@@ -26,6 +26,8 @@ namespace KozlovTest.Views.Pages
         public AddStudentPage()
         {
             InitializeComponent();
+            GroupCmb.ItemsSource = _context.Group.ToList();
+            GroupCmb.DisplayMemberPath = "Name";
         }
 
         private void EntertBtn_Click(object sender, RoutedEventArgs e)
