@@ -83,7 +83,6 @@
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="5   1,2,4" FontSize="20"/>
                         <TextBox Name="Tb4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40"/>
                         <Button Name="p4" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40" Click="p3_Click"/>
-
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
@@ -123,7 +122,6 @@
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="5   1,3" FontSize="20"/>
                         <TextBox Name="Tb6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40"/>
                         <Button Name="p6" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40" Click="p6_Click"/>
-
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
@@ -203,8 +201,9 @@
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="1   организация, которая имеет в собственности обособленное имущество" FontSize="20"/>
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="2   организация, которая имеет имущество в хоз ведении" FontSize="20"/>
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="3   организация, которая имеет обособленное имущество в оперативном" FontSize="20"/>
-                        <TextBlock Margin="10" HorizontalAlignment="Left" Text="4   " FontSize="20"/>
-                        <TextBlock Margin="10" HorizontalAlignment="Left" Text="5   научно - технический прогресс" FontSize="20"/>
+                        <TextBlock Margin="10" HorizontalAlignment="Left" Text="4   научно - технический прогресс" FontSize="20"/>
+                        <TextBox Name="Tb10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40"/>
+                        <Button Name="p10" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40" Click="p10_Click"/>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
@@ -223,6 +222,8 @@
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="3   развитие концентрации в промышленности" FontSize="20"/>
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="4   расширение комбинирвания в промышленности" FontSize="20"/>
                         <TextBlock Margin="10" HorizontalAlignment="Left" Text="5   научно - технический прогресс" FontSize="20"/>
+                        <TextBox Name="Tb11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40"/>
+                        <Button Name="p11" Content="Принять" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Width="100" Height="40" Click="p11_Click"/>
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>

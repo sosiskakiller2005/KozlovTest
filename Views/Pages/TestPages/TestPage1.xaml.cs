@@ -70,7 +70,7 @@ namespace KozlovTest.Views.Pages.TestPages
 
         private void p4_Click(object sender, RoutedEventArgs e)
         {
-            if (Tb4Text == "1")
+            if (Tb4.Text == "1")
             {
                 MessageBox.Show("Правильно");
                 sum++;
@@ -84,25 +84,80 @@ namespace KozlovTest.Views.Pages.TestPages
 
         private void p5_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Tb5.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p5.Visibility = Visibility.Collapsed;
         }
 
         private void p6_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Tb6.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p6.Visibility = Visibility.Collapsed;
         }
 
         private void p7_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Tb7.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p7.Visibility = Visibility.Collapsed;
         }
 
         private void p8_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Tb8.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p8.Visibility = Visibility.Collapsed;
         }
 
         private void p9_Click(object sender, RoutedEventArgs e)
+        {
+            if (Tb9.Text == "1")
+            {
+                MessageBox.Show("Правильно");
+                sum++;
+            }
+            else
+            {
+                MessageBox.Show("неправильно");
+            }
+            p9.Visibility = Visibility.Collapsed;
+        }
+
+        private void p10_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void p11_Click(object sender, RoutedEventArgs e)
         {
 
         }
